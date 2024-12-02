@@ -1,6 +1,14 @@
 # IRC-Client-Server-Assignment
 An IRC Socket Programming Assignment of Networks &amp; Data Communications Module
 
+## Disclaimer
+
+The share of this ASSIGNMENT CONTENT is only a result of BEING REQUESTED. I am not personally responsible for anything.
+FOR REFERENCE ONLY!
+Copy (or other illegal use) AT YOUR OWN RISK
+
+## Introduction
+
 There are FOUR parts in this project:
 
 1. client.cpp
