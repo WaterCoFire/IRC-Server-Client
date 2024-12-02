@@ -1,0 +1,9 @@
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/IRC.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/edit_cache.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/rebuild_cache.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/list_install_components.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/install.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/install/local.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/install/strip.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/IRC_autogen_timestamp_deps.dir
+C:/Users/28468/Desktop/IRC/IRC/build/Desktop_Qt_6_5_3_MinGW_64_bit-release/CMakeFiles/IRC_autogen.dir
