@@ -24,13 +24,13 @@ Like a HexChat client IN CONSOLE (It can either act as the SuperBot or a normal 
 
 client.cpp should be compiled and run on a Windows VM (IP address fc00:1337::19).
 
-2. IRC (folder) and irc-ui (folder)
+2. IRC (folder) and irc-ui (folder) (Note only for GitHub repository: irc-ui not uploaded due to its size)
 
 Like a HexChat client IN GUI (It can either act as the SuperBot or a normal client like a HexChat client to be used by a human being).
 
-The IRC folder contains the GUI project source code which should be compiled and run on a Windows VM (IP address fc00:1337::19) WITH PROPER LIBRARIES AND ENVIRONMENTS INSTALLED, 
+The IRC folder contains the GUI project source code which should be compiled and run on a Windows VM WITH PROPER LIBRARIES AND ENVIRONMENTS INSTALLED, 
 
-the irc-ui folder contains the executable of GUI project (IRC.exe) which should be compiled and run on a Windows VM (IP address fc00:1337::19).
+the irc-ui folder contains the executable of GUI project (IRC.exe) which should be compiled and run on a Windows VM.
 
 **IMPORTANT:**
 
@@ -48,7 +48,7 @@ The irc-ui folder has an "IRC.exe" executable inside it and you can just double 
 
 Like a miniircd server.
 
-server.cpp should be compiled and run on a Linux VM (IP address fc00:1337::17).
+server.cpp should be compiled and run on a Linux VM.
 
 4. funfacts.txt
 
