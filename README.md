@@ -1,6 +1,8 @@
-# IRC-Client-Server-Assignment
+# IRC-Server-Client
 
-An IRC Socket Programming Assignment of Networks &amp; Data Communications Module
+This is a Socket Programming Assignment of Networks &amp; Data Communications Module
+
+Implements both server and client according to IRC protocol. Works with HexChat. Available in both console and GUI.
 
 **This README is not specifically written for GitHub repository,**
 **but originally written for assignment submission (in .txt) so sorry for mediocre format**
