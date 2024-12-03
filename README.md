@@ -2,6 +2,9 @@
 
 An IRC Socket Programming Assignment of Networks &amp; Data Communications Module
 
+**This README is not specifically written for GitHub repository,**
+**but originally written for assignment submission (in .txt) so sorry for mediocre format**
+
 ## Disclaimer
 
 The share of this ASSIGNMENT CONTENT is only a result of BEING REQUESTED.
@@ -22,7 +25,7 @@ There are FOUR parts in this project:
 
 Like a HexChat client IN CONSOLE (It can either act as the SuperBot or a normal client like a HexChat client to be used by a human being).
 
-client.cpp should be compiled and run on a Windows VM (IP address fc00:1337::19).
+client.cpp should be compiled and run on a Windows VM.
 
 2. IRC (folder) and irc-ui (folder) (Note only for GitHub repository: irc-ui not uploaded due to its size)
 
