@@ -1,8 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Siqi Peng, Jieshen Cai
-*/
-
 #include "login.h"
 #include "ui_login.h"
 
