@@ -1,8 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Shunyao Wang
-*/
-
 #include "widget.h"
 #include "login.h"
 #include <QApplication>
