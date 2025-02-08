@@ -1,9 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Everyone in the group contributed to this code file.
-Specific contributors of each function is provided in comments at the head of it.
-*/
-
 #include <iostream>
 #include <algorithm>
 #include <chrono>
@@ -30,7 +24,6 @@ boolean isExit = false;
 /*
 Converts an IP address from text to binary format
 */
-// Contributors: Yao Yao
 struct ThreadParams
 {
     SOCKET sock;
@@ -41,7 +34,6 @@ struct ThreadParams
 /*
 Converts an IP address from text to binary format
 */
-// Contributors: Siqi Peng, Jieshen Cai
 int inet(int af, const char *src, void *dst)
 {
     struct sockaddr_storage ss;
@@ -71,7 +63,6 @@ int inet(int af, const char *src, void *dst)
 /*
 Select statements from funfact.txt for random replies
 */
-// Contributors: Yao Yao, Jiangtao Ma
 std::string getRandomFunFact()
 {
     std::ifstream file("funfacts.txt");
@@ -109,7 +100,6 @@ std::string getRandomFunFact()
 Get a random user
 Users are randomly selected and senders and bots are excluded
 */
-// Contributors: Yao Yao, Shunyao Wang
 std::string getRandomUser(const std::vector<std::string> &users, const std::string &botName, const std::string &sender)
 {
     std::vector<std::string> validUsers;
@@ -130,14 +120,12 @@ std::string getRandomUser(const std::vector<std::string> &users, const std::stri
 }
 
 // Send NAMES to user
-// Contributors: Jiangtao Ma
 void requestChannelUsers(SOCKET sock, const std::string &channel)
 {
     sendCommand(sock, "NAMES " + channel + "\r\n");
 }
 
 // Send commands to the server
-// Contributors: Jieshen Cai
 void sendCommand(SOCKET sock, const std::string &command)
 {
     if (command.empty())
@@ -155,7 +143,6 @@ void sendCommand(SOCKET sock, const std::string &command)
 /*
 Handling the server response
 */
-// Contributors: Siqi Peng, Shunyao Wang, Jieshen Cai, Yao Yao, Jiangtao Ma
 void handleServerResponse(SOCKET sock, const std::string &botName, const std::string &channel)
 {
     char buffer[1024];
@@ -411,7 +398,6 @@ void handleServerResponse(SOCKET sock, const std::string &botName, const std::st
 /*
 A thread that processes user input
 */
-// Contributors: Shunyao Wang, Jiangtao Ma, Yao Yao
 DWORD WINAPI inputThread(LPVOID param)
 {
     ThreadParams *params = (ThreadParams *)param;
@@ -475,7 +461,6 @@ DWORD WINAPI inputThread(LPVOID param)
 /*
 The main function that the program executes
 */
-// Contributors: Siqi Peng, Jieshen Cai, Yao Yao
 int main(int argc, char *argv[])
 {
     WSADATA wsaData;
