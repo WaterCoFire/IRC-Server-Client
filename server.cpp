@@ -1,9 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Everyone in the group contributed to this code file.
-Specific contributors of each function is provided in comments at the head of it.
-*/
-
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -43,11 +37,9 @@ public:
     std::map<std::string, bool> channel_moderated;          // If the channel is moderated
 
     /*Constructor*/
-    // Contributors: Shunyao Wang
     IRCServer() : server_fd(-1) {}
 
     /*Destructor*/
-    // Contributors: Shunyao Wang
     ~IRCServer()
     {
         if (server_fd != -1)
@@ -57,7 +49,6 @@ public:
     }
 
     /*Start IRC server*/
-    // Contributors: Jiangtao Ma, Jieshen Cai
     void start()
     {
         sockaddr_in6 address;
@@ -117,7 +108,6 @@ private:
     bool super_bot_set = false;
 
     // Check validity of the nickname
-    // Contributors: Yao Yao, Shunyao Wang
     bool is_invalid_nick(const std::string &nickname)
     {
         // Validity check of the nickname. No special characters allowed. No more than 12 characters.
@@ -130,7 +120,6 @@ private:
 
     /*Send a message to given socket
     called by all message sending functions e.g. broadcast, public message and private message*/
-    // Contributors: Yao Yao, Siqi Peng
     int send_message(int client_socket, const std::string &message)
     {
         std::cout << "START SENDING MESSAGE..." << std::endl;
@@ -145,7 +134,6 @@ private:
 
     /*broadcast to all channels (including sender itself)
     used during moments like joining a channel*/
-    // Contributors: Jieshen Cai, Siqi Peng
     void broadcast_to_channel(const std::string &channel, const std::string &message)
     {
         std::cout << "START BROADCASTING..." << std::endl;
@@ -162,7 +150,6 @@ private:
     /*
     sending public messages
     */
-    // Contributors: Shunyao Wang, Siqi Peng
     void public_message(const std::string &channel, const std::string &message, int exclude_socket = -1)
     {
         std::cout << "PREPARE TO SEND PUBLIC MESSAGE: " << message << std::endl;
@@ -205,7 +192,6 @@ private:
     }
 
     /*handles messages that should be sent to the bot, e.g. !hello !slap etc.*/
-    // Contributors: Yao Yao, Jieshen Cai
     void send_to_bot(const std::string &message)
     {
         std::cout << "SENDING TO BOT...\n";
@@ -223,7 +209,6 @@ private:
     }
 
     /* handles ping msg*/
-    // Contributors: Jieshen Cai, Siqi Peng, Shunyao Wang
     void handle_ping(int client_socket, const std::string &message_id)
     {
         std::cout << "Handling: PING\n";
@@ -233,7 +218,6 @@ private:
     }
 
     /* handles join msg*/
-    // Contributors: Siqi Peng, Jieshen Cai, Jiangtao Ma
     void handle_join(int client_socket, const std::string &orig_channel)
     {
         std::cout << "Handling: JOIN\n";
@@ -346,7 +330,6 @@ private:
     }
 
     /* handle kick message */
-    // Contributors: Yao Yao
     std::string handle_kick(int client_socket, const std::string &channel, const std::string &target)
     {
         std::cout << "Handling:KICK\n";
@@ -396,7 +379,6 @@ private:
     }
 
     /* Handle TIME */
-    // Contributors: Yao Yao, Shunyao Wang
     std::string handle_time(int client_socket)
     {
         std::cout << "Handling:TIME\n";
@@ -418,7 +400,6 @@ private:
     }
 
     // Handle topic message
-    // Contributors: Jiangtao Ma
     std::string handle_topic(int client_socket, const std::string &orig_channel)
     {
         std::cout << "Handling:TOPIC\n"; // debug
@@ -449,7 +430,6 @@ private:
     }
 
     // handle whois command
-    // Contributors: Jieshen Cai
     std::string handle_whois(int client_socket, const std::string &orig_channel)
     {
 
@@ -499,7 +479,6 @@ private:
         }
     }
     // handle WHO msg
-    // Contributors: Yao Yao, Jiangtao Ma, Jieshen Cai
     void handle_who(int client_socket, const std::string &orig_channel)
     {
         // Debug use
@@ -529,7 +508,6 @@ private:
     }
 
     // handle MODE message
-    // Contributors: Yao Yao, Siqi Peng, Shunyao Wang
     std::string handle_mode(int client_socket, const std::string &orig_message)
     {
         // For Debug use
@@ -605,7 +583,6 @@ private:
     }
 
     /* Find socket by username */
-    // Contributors: Siqi Peng
     int find_socket_by_username(const std::string &username)
     {
         for (const auto &pair : user_nicknames)
@@ -619,7 +596,6 @@ private:
     }
 
     // handle NAMES message
-    // Contributors: Jieshen Cai
     void handle_names(int client_socket, const std::string &orig_channel)
     {
         std::cout << "Handling: NAMES\n";
@@ -647,7 +623,6 @@ private:
     }
 
     // handle QUIT message (User leaves)
-    // Contributors: Shunyao Wang, Jiangtao Ma
     void handle_quit(int client_socket, const std::string &quit_message = "")
     {
         std::cout << "Handling: QUIT" << "\n";
@@ -699,7 +674,6 @@ private:
     }
 
     // handle PRIVMSG aka message
-    // Contributors: Jieshen Cai, Siqi Peng
     void handle_privmsg(int client_socket, const std::string &target, const std::string &message)
     {
         std::cout << "START HANDLING THIS MESSAGE." << std::endl;
@@ -804,7 +778,6 @@ private:
     }
 
     // Handle message from client, HexChat or client.exe from Windows VM
-    // Contributors: Yao Yao, Jieshen Cai, Siqi Peng, Jiangtao Ma, Shunyao Wang
     void handleClient(int client_socket)
     {
         char buffer[MAX_BUFFER_SIZE] = {0};
@@ -1074,7 +1047,6 @@ private:
 };
 
 /*main() function*/
-// Contributors: Yao Yao
 int main()
 {
     // START SERVER
