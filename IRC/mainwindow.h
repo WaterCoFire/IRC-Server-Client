@@ -1,8 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Yao Yao
-*/
-
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "widget.h"
