@@ -1,8 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Yao Yao, Jieshen Cai
-*/
-
 #ifndef LOGIN_H
 #define LOGIN_H
 #include <QTcpSocket>
