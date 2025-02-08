@@ -1,8 +1,3 @@
-/*
-CONTRIBUTORS OF THIS CODE FILE
-Jiangtao Ma
-*/
-
 #ifndef WIDGET_H
 #define WIDGET_H
 
