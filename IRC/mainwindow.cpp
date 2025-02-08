@@ -1,8 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Shunyao Wang, Jiangtao Ma
-*/
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
