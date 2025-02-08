@@ -1,8 +1,3 @@
-/*
-CONTRIBUTIONS OF THIS CODE FILE
-Siqi Peng, Jieshen Cai, Shunyao Wang
-*/
-
 #include "widget.h"
 #include "./ui_widget.h"
 #include <QHostAddress>
