@@ -292,3 +292,7 @@ e.g. !mode #testChannel -m
 **END**
 
 Last Updated Oct 4 2024
+
+## Credits
+
+Thanks to all the teammates (Jiangtao Ma, Siqi Peng, Shunyao Wang, Yao Yao) for their contribution to this assignment.
